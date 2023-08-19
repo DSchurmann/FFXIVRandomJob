@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang ="en">
+	<head>
+		<script type="text/javascript" src="js/RandomJob.js"></script>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<h1>Random Job Selector</h1>
+		<form onsubmit="generate(); return false">
+			<div class="fieldsets">
+				<fieldset>
+					<legend><input type="checkbox" id="tanks" value="tanks" /> <label for="tanks">Tanks</label></legend>
+					<input type="checkbox" id="pal"/><label for="pal">Paladin</label><br/>
+					<input type="checkbox" id="war"/><label for="war">Warrior</label><br/>
+					<input type="checkbox" id="drk"/><label for="drk">Dark Knight</label><br/>
+					<input type="checkbox" id="gnb"/><label for="gnb">Gunbreaker</label>
+				</fieldset>
+
+				<fieldset>
+					<legend><input type="checkbox" id="healers" value="healers" /> <label for="healers">Healers</label></legend>
+					<input type="checkbox" id="whm"/><label for="whm">White Mage</label><br/>
+					<input type="checkbox" id="sch"/><label for="sch">Scholar</label><br/>
+					<input type="checkbox" id="ast"/><label for="ast">Astrologian</label><br/>
+					<input type="checkbox" id="sge"/><label for="sge">Sage</label>
+				</fieldset>
+
+				<fieldset>
+					<legend><input type="checkbox" id="mdps" value="mdps" /> <label for="mdps">Melee DPS</label></legend>
+					<input type="checkbox" id="mnk"/><label for="mnk">Monk</label><br/>
+					<input type="checkbox" id="drg"/><label for="drg">Dragoon</label><br/>
+					<input type="checkbox" id="nin"/><label for="nin">Ninja</label><br/>
+					<input type="checkbox" id="sam"/><label for="sam">Samurai</label><br/>
+					<input type="checkbox" id="rpr"/><label for="rpr">Reaper</label>
+				</fieldset>
+
+				<fieldset>
+					<legend><input type="checkbox" id="rdps" value="rdps" /> <label for="rdps">Ranged DPS</label></legend>
+					<input type="checkbox" id="brd"/><label for="brd">Bard</label><br/>
+					<input type="checkbox" id="mch"/><label for="mch">Machinist</label><br/>
+					<input type="checkbox" id="dnc"/><label for="dnc">Dancer</label>
+				</fieldset>
+
+				<fieldset>
+					<legend><input type="checkbox" id="madps" value="madps" /> <label for="madps">Magic DPS</label></legend>
+					<input type="checkbox" id="blm"/><label for="blm">Black Mage</label><br/>
+					<input type="checkbox" id="smn"/><label for="smn">Summoner</label><br/>
+					<input type="checkbox" id="rdm"/><label for="rdm">Red Mage</label>
+				</fieldset>
+			</div>
+			<br />
+			<input type="button" onclick="selectAll();" value="Select All"/>
+			<input type="button" onclick="deselectAll();" value="Unselect All"/>
+			<br />
+			<input type="submit" value="Choose a Job!" />
+		</form>
+		<br />
+		<h2><img id="image"/><div id="job"></div></h2>
+	</body>
+</html>
