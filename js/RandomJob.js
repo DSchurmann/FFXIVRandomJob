@@ -30,9 +30,12 @@ function loadImages() {
 function generate() {
 	loadImages();
 	jobs = getSelectedJobs();
-	rand = Math.floor(Math.random() * jobs.length);
-	document.getElementById("job").innerHTML = jobs[rand];
-	document.getElementById("image").src = IMAGES[jobs[rand]];
+	if(jobs.length < 0)
+	{
+		rand = Math.floor(Math.random() * jobs.length);
+		document.getElementById("job").innerHTML = jobs[rand];
+		document.getElementById("image").src = IMAGES[jobs[rand]];
+	}
 }
 
 function getSelectedJobs() {
