@@ -30,7 +30,7 @@ function loadImages() {
 function generate() {
 	loadImages();
 	jobs = getSelectedJobs();
-	if(jobs.length < 0)
+	if(jobs.length > 0)
 	{
 		rand = Math.floor(Math.random() * jobs.length);
 		document.getElementById("job").innerHTML = jobs[rand];
