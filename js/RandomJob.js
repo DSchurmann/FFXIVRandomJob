@@ -76,6 +76,8 @@ function getSelectedJobs() {
 			jobs.push("Samurai");
 		if(document.getElementById("rpr").checked == true)
 			jobs.push("Reaper");
+		if(document.getElementById("vpr").checked == true)
+			jobs.push("Viper");
 	}
 
 	if(document.getElementById("rdps").checked == true) {
