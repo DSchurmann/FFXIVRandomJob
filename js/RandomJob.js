@@ -96,7 +96,7 @@ function getSelectedJobs() {
 			jobs.push("Summoner");
 		if(document.getElementById("rdm").checked == true)
 			jobs.push("Red Mage");
-		if(document.getElementById("rdm").checked == true)
+		if(document.getElementById("pct").checked == true)
 			jobs.push("Pictomancer");
 	}
 
